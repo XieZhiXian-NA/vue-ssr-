@@ -1,0 +1,17 @@
+{
+    "name": "myvue",
+    "version": "1.0.0",
+    "description": "my vue",
+    "author": "xzx",
+    "private": true,
+    "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "e2e": "node test/e2e/runner.js",
+    "test": "npm run unit && npm run e2e",
+    "build": "node build/build.js",
+    "server": "webpack --config build/webpack.server.conf.js",
+    "client": "webpack --config build/webpack.client.conf.js"
+    }
+}
